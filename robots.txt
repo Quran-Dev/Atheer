@@ -1,0 +1,10 @@
+# السماح لجميع محركات البحث بزحف الموقع بالكامل
+User-agent: *
+Allow: /
+
+# منع زحف بعض الملفات غير الضرورية (اختياري)
+Disallow: /sw.js
+Disallow: /manifest.json
+
+# موقع خريطة الموقع
+Sitemap: https://quran-dev.github.io/Atheer/sitemap.xml
