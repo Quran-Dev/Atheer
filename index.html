@@ -72,7 +72,7 @@
 </head>
 <body>
 
-    <!-- ===== شاشة البداية الجديدة ===== -->
+    <!-- ===== شاشة البداية ===== -->
     <div id="splash-screen" class="splash-screen">
         <div class="splash-corner top-right"></div>
         <div class="splash-corner top-left"></div>
@@ -269,6 +269,7 @@
         </button>
     </div>
 
+    <!-- ===== نافذة المعلومات (معدلة مع المصادر) ===== -->
     <div id="info-popup-modal" class="modal-info">
         <div class="modal-info-content">
             <div class="modal-info-header">
@@ -280,6 +281,7 @@
             <div class="modal-info-body">
                 <p class="main-desc">أثير | رفيقك الهادئ لتلاوة وحفظ القرآن. 🌿🌷<br>
                 هنا, في هذه المساحة الهادئة, أردنا أن نصنع لك ملاذاً يجمعك بكتاب الله بأسلوب يملأ قلبك بالسكينة.</p>
+                
                 <h4>🌷 ما الذي يجعل تجربتك معنا فريدة؟</h4>
                 <ul class="features-list">
                     <li><strong>أصواتٌ تخشع لها القلوب:</strong> اخترنا لك 15 قارئاً من أعذب الأصوات.</li>
@@ -290,10 +292,58 @@
                     <li><strong>الانتقال التلقائي والتكرار:</strong> لتجربة استماع متواصلة.</li>
                     <li><strong>التوافق اللوني والوضع الليلي:</strong> دعم كامل للعين.</li>
                 </ul>
+                
                 <hr class="privacy-divider">
+                
+                <!-- ===== قسم المصادر الجديد والمطور ===== -->
+                <div class="sources-section">
+                    <h4><i class="fa-solid fa-database"></i> مصادر البيانات</h4>
+                    <p class="sources-desc">يستمد أثير بياناته من المصادر التالية، ونشكرهم على جهودهم المباركة:</p>
+                    
+                    <div class="sources-list">
+                        <!-- المصدر 1: الصوتيات -->
+                        <div class="source-item">
+                            <a href="https://mp3quran.net" target="_blank" rel="noopener noreferrer" class="source-link">
+                                <i class="fa-solid fa-headphones source-icon"></i>
+                                <span class="source-name">mp3quran.net</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square source-external-icon"></i>
+                            </a>
+                            <p class="source-desc">
+                                <strong>المصدر الرئيسي للتلاوات الصوتية</strong> – نوفر أكثر من 15 قارئاً بجودة عالية، ويتم جلب التلاوات مباشرة من هذا المصدر الموثوق.
+                            </p>
+                        </div>
+
+                        <!-- المصدر 2: النص القرآني والتفسير -->
+                        <div class="source-item">
+                            <a href="https://alquran.cloud" target="_blank" rel="noopener noreferrer" class="source-link">
+                                <i class="fa-solid fa-cloud source-icon"></i>
+                                <span class="source-name">Alquran.cloud</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square source-external-icon"></i>
+                            </a>
+                            <p class="source-desc">
+                                <strong>المصدر الرئيسي للنص القرآني والتفسير الميسر</strong> – نعتمد على واجهة برمجة التطبيقات (API) الخاصة بهم للحصول على النص بالرسم العثماني وتفسير مجمع الملك فهد.
+                            </p>
+                        </div>
+
+                        <!-- المصدر 3: المصدر المفتوح (GitHub) -->
+                        <div class="source-item">
+                            <a href="https://github.com/quran-dev/Atheer" target="_blank" rel="noopener noreferrer" class="source-link">
+                                <i class="fa-brands fa-github source-icon"></i>
+                                <span class="source-name">GitHub (المستودع الرسمي)</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square source-external-icon"></i>
+                            </a>
+                            <p class="source-desc">
+                                <strong>المشروع مفتوح المصدر</strong> – يمكنك الاطلاع على الكود، أو الإبلاغ عن مشكلة، أو المساهمة في التطوير عبر مستودعنا على GitHub.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr class="privacy-divider">
+                
                 <div class="privacy-section">
                     <h4><i class="fa-solid fa-shield-heart"></i> خصوصيتك تهمنا</h4>
-                    <p>نحن نحترم خصوصيتك ولا نجمع أي بيانات شخصية عنك.</p>
+                    <p>نحن نحترم خصوصيتك ولا نجمع أي بيانات شخصية عنك. نستخدم Google Analytics بشكل مجهول تماماً لتحسين الأداء.</p>
                 </div>
                 <p class="footer-blessing">جعل الله القرآن ربيع قلبك ونور صدرك. 🌿🌷</p>
             </div>
