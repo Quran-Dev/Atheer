@@ -568,7 +568,10 @@ function populateReciters() {
         { value: 'https://server10.mp3quran.net/ajm/', name: 'أحمد بن علي العجمي' },
         { value: 'https://server7.mp3quran.net/s_gmd/', name: 'سعد الغامدي' },
         { value: 'https://server8.mp3quran.net/bu_khtr/', name: 'صلاح بو خاطر' },
-        { value: 'https://server11.mp3quran.net/shatri/', name: 'أبو بكر الشاطري' }
+        { value: 'https://server11.mp3quran.net/shatri/', name: 'أبو بكر الشاطري' },
+        { value: 'https://server7.mp3quran.net/download/basit/', name: 'عبد الباسط عبد الصمد' }
+
+
     ];
     
     reciterDropdown.innerHTML = '';
