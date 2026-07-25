@@ -1,6 +1,6 @@
-const STATIC_CACHE = 'Atheer-static-v6';
-const API_CACHE = 'Atheer-api-v6';
-const AUDIO_CACHE = 'Atheer-audio-v6';
+const STATIC_CACHE = 'Atheer-static-v8';
+const API_CACHE = 'Atheer-api-v8';
+const AUDIO_CACHE = 'Atheer-audio-v8';
 
 // ===== الملفات الأساسية التي تعمل بدون إنترنت =====
 const staticAssets = [
