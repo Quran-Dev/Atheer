@@ -569,9 +569,9 @@ function populateReciters() {
         { value: 'https://server7.mp3quran.net/s_gmd/', name: 'سعد الغامدي' },
         { value: 'https://server8.mp3quran.net/bu_khtr/', name: 'صلاح بو خاطر' },
         { value: 'https://server11.mp3quran.net/shatri/', name: 'أبو بكر الشاطري' },
-        { value: 'https://server7.mp3quran.net/download/basit/', name: 'عبد الباسط عبد الصمد' }
-
-
+        { value: 'https://server7.mp3quran.net/download/basit/', name: 'عبد الباسط عبد الصمد' },
+        { value: 'https://server14.mp3quran.net/islam/Rewayat-Hafs-A-n-Assem/', name: 'إسلام صبحي' },
+        { value: 'https://server11.mp3quran.net/hazza/', name: 'هزاع البلوشي' }
     ];
     
     reciterDropdown.innerHTML = '';
@@ -771,9 +771,16 @@ function playSurahAudio(surahNumber, surahName, startTime = 0) {
     currentReciterName.innerText = `(${reciterDropdown.options[reciterDropdown.selectedIndex].text})`;
 }
 
+// ===== معالجة أخطاء الصوت (رسالة خاصة لهزاع البلوشي) =====
 if (mainAudio) {
     mainAudio.onerror = function() {
-        showToast("⚠️ خطأ في تحميل التلاوة. تأكد من اتصالك بالإنترنت أو جرب قارئاً آخر.");
+        const currentReciter = reciterDropdown.value;
+        // تحقق مما إذا كان القارئ هو هزاع البلوشي
+        if (currentReciter === 'https://server11.mp3quran.net/hazza/' && currentActiveSurahName) {
+            showToast(`🌷 القارئ (هزاع البلوشي) لم يقرأ سورة ${currentActiveSurahName} بصوته.`);
+        } else {
+            showToast("⚠️ خطأ في تحميل التلاوة. تأكد من اتصالك بالإنترنت أو جرب قارئاً آخر.");
+        }
     };
 }
 
